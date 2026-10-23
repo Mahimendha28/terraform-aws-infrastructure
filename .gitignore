@@ -1,0 +1,26 @@
+# Terraform working files
+.terraform/
+
+# Terraform state — never commit
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Variable files may contain sensitive values
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Secrets and private keys
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials
+.aws/
+
+# Local exports and backups
+state-export.json
+*.save
